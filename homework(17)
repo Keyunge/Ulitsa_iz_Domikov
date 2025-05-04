@@ -1,0 +1,44 @@
+from turtle import *
+
+pensize(3)
+pencolor("black")
+
+def dom():
+    begin_fill()
+    for i in range(4):
+        fd(150)
+        lt(90)
+    end_fill()
+    penup()
+    lt(90)
+    fd(150)
+    lt(90)
+    fd(10)
+    pendown()
+    begin_fill()
+    fillcolor("grey")
+    pencolor("black")
+    pensize(3)
+    for i in range(3):
+        rt(120)
+        fd(170)
+    end_fill()
+
+fillcolor("green")
+dom()
+
+penup()
+goto(180,0)
+rt(180)
+pendown()
+
+fillcolor("red")
+dom()
+
+penup()
+goto(360,0)
+rt(180)
+pendown()
+
+fillcolor("blue")
+dom()
